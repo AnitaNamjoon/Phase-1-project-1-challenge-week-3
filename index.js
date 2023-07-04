@@ -1,13 +1,13 @@
-//Write your code here 
+//Wrie the code here
 document.addEventListener("DOMContentLoaded", () => {
   var list = document.getElementById("list");
   list.innerHTML = "<p>Waiting for the server...<p>";
-  var prev = document.getElementById("prev");
+   var prev = document.getElementById("prev");
   var next = document.getElementById("next");
   var whenSearch = document.getElementById("whenSearch");
   var listContainer = document.getElementById("list-container");
   var details = document.getElementById("details-container");
-  var imgDiv = document.getElementById("cover-container");
+  var imgDivision = document.getElementById("cover-container");
   var buttonToggle = () => (list.innerHTML === "") ? (
     document.getElementById("prev").style = "visibility:hidden",
     document.getElementById("next").style = "visibility :hidden",
@@ -17,10 +17,10 @@ document.addEventListener("DOMContentLoaded", () => {
     document.getElementById("next").style = "visibility :visible"
   );
   buttonToggle();
-  const search = document.getElementById("search");
-  const searched = document.getElementById("search-box");
-  const pageNo = 1;
-  const pages = 0;
+  var search = document.getElementById("search");
+  var searched = document.getElementById("search-box");
+  var pageNo = 1;
+  var pages = 0;
   const mySet = new Set();
   const categories = document.getElementById("categories");
   searched.addEventListener("input", (e) => {
@@ -30,16 +30,16 @@ document.addEventListener("DOMContentLoaded", () => {
     finder(e.target.value);
   });
 
-  // API for the Gutendex
-  const apiUrl = "https://gutendex.com/books";
+  // URL for the Gutendex API
+  let APIUrl = "https://gutendex.com/books";
 
-  let categoriesSetter = (obj) => {
-    var eachBookCat = obj.map((el) => el.category);
+  const categoriesSetter = (obj) => {
+    let eachBookCat = obj.map((el) => el.category);
     eachBookCat.forEach((el) => {
       el.forEach((ex) => mySet.add(ex));
     });
     mySet.forEach(el => {
-      const category = document.createElement('option');
+      var category = document.createElement('option');
       category.textContent = el;
       categories.appendChild(category);
     });
@@ -50,7 +50,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   };
 
-  var buttonSetter = (pages, url) => {
+  let buttonSetter = (pages, url) => {
     function nextPage() {
       if (pages >= pageNo) {
         ++pageNo;
@@ -76,25 +76,25 @@ document.addEventListener("DOMContentLoaded", () => {
   };
 
   let pageSetter = () => {
-    fetch(apiUrl)
+    fetch(APIUrl)
       .then(resp => resp.json())
       .then(obj => {
         pages = Math.ceil(parseInt(obj.count) / 15);
         categoriesSetter(obj.results);
         fetcher();
-        buttonSetter(pages, apiUrl);
+        buttonSetter(pages, APIUrl);
       });
   };
 
   function detAndImgClear() {
     details.innerHTML = "";
-    imgDiv.innerHTML = "";
+    imgDivision.innerHTML = "";
   }
 
-  const ulSetter = (obj) => {
+  let ulSetter = (obj) => {
     list.innerHTML = "";
     obj.forEach(element => {
-  const bookLi = document.createElement('li');
+      let bookLi = document.createElement('li');
       bookLi.textContent = element.title;
       bookLi.id = element.id;
       bookLi.style.transition = "none";
@@ -108,10 +108,10 @@ document.addEventListener("DOMContentLoaded", () => {
             detAndImgClear();
             listContainer.style = liClicked;
             details.style = detailsClicked;
-            imgDiv.style = imgDivClicked;
+            imgDivision.style = imgDivClicked;
             const title = document.createElement('h2');
-            const author = document.createElement('h3');
-            const date = document.createElement('p');
+            let author = document.createElement('h3');
+            var date = document.createElement('p');
             const cover = document.createElement('img');
             const link = document.createElement('a');
             link.href = obj.formats["text/html"];
@@ -128,21 +128,21 @@ document.addEventListener("DOMContentLoaded", () => {
             details.appendChild(author);
             details.appendChild(date);
             details.appendChild(link);
-            imgDiv.appendChild(cover);
+            imgDivision.appendChild(cover);
           });
       });
     });
   };
 
-  let fetcher = (pageNo = 1, url = apiUrl) => {
+  let fetcher = (pageNo = 1, url = APIUrl) => {
     fetch(`${url}?page=${pageNo}&mime_type=image`)
       .then(resp => resp.json())
       .then(obj => ulSetter(obj.results));
   };
 
-  var finder = (query) => {
+  let finder = (query) => {
     if (query.length > 2) {
-      fetch(`${apiUrl}?search=${query}&mime_type=image`)
+      fetch(`${APIUrl}?search=${query}&mime_type=image`)
         .then(resp => resp.json())
         .then(obj => ulSetter(obj.results));
     }
@@ -154,5 +154,4 @@ document.addEventListener("DOMContentLoaded", () => {
   pageSetter();
 
 });
-
   
