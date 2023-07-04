@@ -1,1 +1,201 @@
-
+{
+    "count": 71005,
+    "next": "https://gutendex.com/books/?page=2",
+    "previous": null,
+    "results": [
+      {
+        "id": 1513,
+        "title": "Romeo and Juliet",
+        "authors": [
+          {
+            "name": "Shakespeare, William",
+            "birth_year": 1564,
+            "death_year": 1616
+          }
+        ],
+        "translators": [],
+        "subjects": [
+          "Conflict of generations -- Drama",
+          "Juliet (Fictitious character) -- Drama",
+          "Romeo (Fictitious character) -- Drama",
+          "Tragedies",
+          "Vendetta -- Drama",
+          "Verona (Italy) -- Drama",
+          "Youth -- Drama"
+        ],
+        "bookshelves": [],
+        "languages": [
+          "en"
+        ],
+        "copyright": false,
+        "media_type": "Text",
+        "formats": {
+          "application/x-mobipocket-ebook": "https://www.gutenberg.org/ebooks/1513.kf8.images",
+          "application/epub+zip": "https://www.gutenberg.org/ebooks/1513.epub3.images",
+          "text/html": "https://www.gutenberg.org/ebooks/1513.html.images",
+          "application/octet-stream": "https://www.gutenberg.org/files/1513/1513-0.zip",
+          "image/jpeg": "https://www.gutenberg.org/cache/epub/1513/pg1513.cover.medium.jpg",
+          "text/plain": "https://www.gutenberg.org/ebooks/1513.txt.utf-8",
+          "text/plain; charset=us-ascii": "https://www.gutenberg.org/files/1513/1513-0.txt",
+          "application/rdf+xml": "https://www.gutenberg.org/ebooks/1513.rdf"
+        },
+        "download_count": 78258
+      },
+      {
+        "id": 2701,
+        "title": "Moby Dick; Or, The Whale",
+        "authors": [
+          {
+            "name": "Melville, Herman",
+            "birth_year": 1819,
+            "death_year": 1891
+          }
+        ],
+        "translators": [],
+        "subjects": [
+          "Adventure stories",
+          "Ahab, Captain (Fictitious character) -- Fiction",
+          "Mentally ill -- Fiction",
+          "Psychological fiction",
+          "Sea stories",
+          "Ship captains -- Fiction",
+          "Whales -- Fiction",
+          "Whaling -- Fiction",
+          "Whaling ships -- Fiction"
+        ],
+        "bookshelves": [
+          "Best Books Ever Listings"
+        ],
+        "languages": [
+          "en"
+        ],
+        "copyright": false,
+        "media_type": "Text",
+        "formats": {
+          "application/x-mobipocket-ebook": "https://www.gutenberg.org/ebooks/2701.kf8.images",
+          "application/epub+zip": "https://www.gutenberg.org/ebooks/2701.epub3.images",
+          "image/jpeg": "https://www.gutenberg.org/cache/epub/2701/pg2701.cover.medium.jpg",
+          "text/html; charset=utf-8": "https://www.gutenberg.org/files/2701/2701-h/2701-h.htm",
+          "text/plain; charset=utf-8": "https://www.gutenberg.org/files/2701/2701-0.txt",
+          "text/html": "https://www.gutenberg.org/ebooks/2701.html.images",
+          "application/rdf+xml": "https://www.gutenberg.org/ebooks/2701.rdf"
+        },
+        "download_count": 73331
+      },
+      {
+        "id": 2641,
+        "title": "A Room with a View",
+        "authors": [
+          {
+            "name": "Forster, E. M. (Edward Morgan)",
+            "birth_year": 1879,
+            "death_year": 1970
+          }
+        ],
+        "translators": [],
+        "subjects": [
+          "British -- Italy -- Fiction",
+          "England -- Fiction",
+          "Florence (Italy) -- Fiction",
+          "Humorous stories",
+          "Young women -- Fiction"
+        ],
+        "bookshelves": [
+          "Italy"
+        ],
+        "languages": [
+          "en"
+        ],
+        "copyright": false,
+        "media_type": "Text",
+        "formats": {
+          "text/plain": "https://www.gutenberg.org/ebooks/2641.txt.utf-8",
+          "application/x-mobipocket-ebook": "https://www.gutenberg.org/ebooks/2641.kf8.images",
+          "text/html": "https://www.gutenberg.org/ebooks/2641.html.images",
+          "application/octet-stream": "https://www.gutenberg.org/files/2641/2641-0.zip",
+          "text/plain; charset=us-ascii": "https://www.gutenberg.org/files/2641/2641-0.txt",
+          "application/epub+zip": "https://www.gutenberg.org/ebooks/2641.epub3.images",
+          "image/jpeg": "https://www.gutenberg.org/cache/epub/2641/pg2641.cover.medium.jpg",
+          "application/rdf+xml": "https://www.gutenberg.org/ebooks/2641.rdf"
+        },
+        "download_count": 65998
+      },
+      {
+        "id": 145,
+        "title": "Middlemarch",
+        "authors": [
+          {
+            "name": "Eliot, George",
+            "birth_year": 1819,
+            "death_year": 1880
+          }
+        ],
+        "translators": [],
+        "subjects": [
+          "Bildungsromans",
+          "City and town life -- Fiction",
+          "Didactic fiction",
+          "Domestic fiction",
+          "England -- Fiction",
+          "Love stories",
+          "Married people -- Fiction",
+          "Young women -- Fiction"
+        ],
+        "bookshelves": [
+          "Best Books Ever Listings",
+          "Historical Fiction"
+        ],
+        "languages": [
+          "en"
+        ],
+        "copyright": false,
+        "media_type": "Text",
+        "formats": {
+          "application/x-mobipocket-ebook": "https://www.gutenberg.org/ebooks/145.kf8.images",
+          "application/epub+zip": "https://www.gutenberg.org/ebooks/145.epub3.images",
+          "text/html": "https://www.gutenberg.org/ebooks/145.html.images",
+          "application/octet-stream": "https://www.gutenberg.org/files/145/145-0.zip",
+          "text/plain": "https://www.gutenberg.org/ebooks/145.txt.utf-8",
+          "image/jpeg": "https://www.gutenberg.org/cache/epub/145/pg145.cover.medium.jpg",
+          "text/plain; charset=us-ascii": "https://www.gutenberg.org/files/145/145-0.txt",
+          "application/rdf+xml": "https://www.gutenberg.org/ebooks/145.rdf"
+        },
+        "download_count": 65128
+      },
+      {
+        "id": 37106,
+        "title": "Little Women; Or, Meg, Jo, Beth, and Amy",
+        "authors": [
+          {
+            "name": "Alcott, Louisa May",
+            "birth_year": 1832,
+            "death_year": 1888
+          }
+        ],
+        "translators": [],
+        "subjects": [
+          "Autobiographical fiction",
+          "Bildungsromans",
+          "Domestic fiction",
+          "Family life -- New England -- Fiction",
+          "March family (Fictitious characters) -- Fiction",
+          "Mothers and daughters -- Fiction",
+          "New England -- Fiction",
+          "Sisters -- Fiction",
+          "Young women -- Fiction"
+        ],
+        "bookshelves": [],
+        "languages": [
+          "en"
+        ],
+        "copyright": false,
+        "media_type": "Text",
+        "formats": {
+          "application/octet-stream": "https://www.gutenberg.org/files/37106/37106-0.zip",
+          "text/plain; charset=us-ascii": "https://www.gutenberg.org/files/37106/37106-0.txt",
+          "application/x-mobipocket-ebook": "https://www.gutenberg.org/ebooks/37106.kf8.images",
+          "application/epub+zip": "https://www.gutenberg.org/ebooks/37106.epub3.images",
+          "image/jpeg": "https://www.gutenberg.org/cache/epub/37106/pg37106.cover.medium.jpg",
+          "text/html": "https://www.gutenberg.org/ebooks/37106.html.images",
+          "application/rdf+xml": "https://www.gutenberg.org/ebooks/37106.rdf",
+          "text/plain": "https://www.gutenberg.org/ebooks/37106.txt.utf-8"
