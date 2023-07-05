@@ -1,4 +1,4 @@
-//Wrie the code here
+//Write the code here
 document.addEventListener("DOMContentLoaded", () => {
   var list = document.getElementById("list");
   list.innerHTML = "<p>Waiting for the server...<p>";
