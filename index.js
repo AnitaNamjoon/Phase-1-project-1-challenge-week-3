@@ -1,14 +1,31 @@
-//Write the code here
+//Write your code here
+// Declare a function to calculate the number of pages
+async function calculatePageCount(APIUrl, itemsPerPage) {
+  try {
+    // Fetch  data from the API
+    let response = await fetch(APIUrl);
+    let data = await response.json();
+    // Show  the total book count
+    const bookCount = data.count;
+    // Calculate the number of pages
+    var pageCount = Math.ceil(bookCount / itemsPerPage);
+
+    return pageCount;
+  } catch (error) {
+    console.error("Error calculating page count:", error);
+    throw error;
+  }
+}
 document.addEventListener("DOMContentLoaded", () => {
-  var list = document.getElementById("list");
+  let list = document.getElementById("list");
   list.innerHTML = "<p>Waiting for the server...<p>";
-   var prev = document.getElementById("prev");
+  let prev = document.getElementById("prev");
   var next = document.getElementById("next");
-  var whenSearch = document.getElementById("whenSearch");
-  var listContainer = document.getElementById("list-container");
-  var details = document.getElementById("details-container");
-  var imgDivision = document.getElementById("cover-container");
-  var buttonToggle = () => (list.innerHTML === "") ? (
+  let whenSearch = document.getElementById("whenSearch");
+  let listContainer = document.getElementById("list-container");
+  const details = document.getElementById("details-container");
+  let imgDivision = document.getElementById("cover-container");
+  let buttonToggle = () => (list.innerHTML === "") ? (
     document.getElementById("prev").style = "visibility:hidden",
     document.getElementById("next").style = "visibility :hidden",
     list.innerHTML="<p>No Book found</p>"
@@ -19,10 +36,10 @@ document.addEventListener("DOMContentLoaded", () => {
   buttonToggle();
   var search = document.getElementById("search");
   var searched = document.getElementById("search-box");
-  var pageNo = 1;
-  var pages = 0;
+  let pageNo = 1;
+  let pages = 0;
   const mySet = new Set();
-  const categories = document.getElementById("categories");
+  let categories = document.getElementById("categories");
   searched.addEventListener("input", (e) => {
     detAndImgClear();
     search.textContent = "Refresh";
@@ -30,16 +47,14 @@ document.addEventListener("DOMContentLoaded", () => {
     finder(e.target.value);
   });
 
-  // URL for the Gutendex API
-  let APIUrl = "https://gutendex.com/books";
+  //URL for the Gutendex API
+  const APIUrl = "https://gutendex.com/books";
 
-  const categoriesSetter = (obj) => {
-    let eachBookCat = obj.map((el) => el.category);
-    eachBookCat.forEach((el) => {
-      el.forEach((ex) => mySet.add(ex));
-    });
+  let categoriesSetter = (obj) => {
+    const eachBookCat = obj.map((el) => el.category);
+    eachBookCat.map((el) => el.map((ex) => mySet.add(ex)));
     mySet.forEach(el => {
-      var category = document.createElement('option');
+      let category = document.createElement('option');
       category.textContent = el;
       categories.appendChild(category);
     });
@@ -82,7 +97,7 @@ document.addEventListener("DOMContentLoaded", () => {
         pages = Math.ceil(parseInt(obj.count) / 15);
         categoriesSetter(obj.results);
         fetcher();
-        buttonSetter(pages, APIUrl);
+        buttonSetter(pages, apiUrl);
       });
   };
 
@@ -91,7 +106,7 @@ document.addEventListener("DOMContentLoaded", () => {
     imgDivision.innerHTML = "";
   }
 
-  let ulSetter = (obj) => {
+  const ulSetter = (obj) => {
     list.innerHTML = "";
     obj.forEach(element => {
       let bookLi = document.createElement('li');
@@ -101,19 +116,19 @@ document.addEventListener("DOMContentLoaded", () => {
       list.appendChild(bookLi);
       bookLi.addEventListener("click", (e) => {
         whenSearch.style.display="none";
-        fetch(`${apiUrl}/${e.target.id}`)
+        fetch(`${APIUrl}/${e.target.id}`)
           .then(resp => resp.json())
           .then(obj => {
             imgDiv.style.transition = "all 0.1s";
             detAndImgClear();
             listContainer.style = liClicked;
             details.style = detailsClicked;
-            imgDivision.style = imgDivClicked;
-            const title = document.createElement('h2');
-            let author = document.createElement('h3');
+            imgDiv.style = imgDivClicked;
+            let title = document.createElement('h2');
+            const author = document.createElement('h3');
             var date = document.createElement('p');
-            const cover = document.createElement('img');
-            const link = document.createElement('a');
+            let cover = document.createElement('img');
+            let link = document.createElement('a');
             link.href = obj.formats["text/html"];
             link.target = "_blank";
             link.textContent = "Read Online";
