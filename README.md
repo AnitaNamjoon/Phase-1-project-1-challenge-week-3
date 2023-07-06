@@ -25,3 +25,50 @@ Use this(https://www.npmjs.com/package/json-server) to get instructions on how t
 5. Go back to the browser and the browser tab where the index.html loaded and refresh the page.
 A list of books should appear.
 
+# Navigating through the project
+In this project a person can:
+1. Explore the books and the categories.
+2. "Give out" a book.
+3. Add and remove copies of a book available and owned by the library.
+4. Delete all recordsof a book by the API.
+
+# Criteria met
+- A well documented README.md that can help any developer.
+- 20 plus commits in the project with well detailed commit messages.
+- This project has a single HTML file.
+- This project incorporates at least 3 separate event listeners.
+
+    (a) DOMContentLoaded : in javascript to load the script
+    (b) Click : in javascript for all the buttons in the project
+    (c) Change : in javascript for the input (search bar) and selection menu
+    (d) Hover : in css file for the list items
+    (e) Focus : in css for the input (search bar)
+
+# Introduction
+A library is a collection of resources,typically books and other printed materials which are organised and maintained for public or private use.
+
+# Problem Statement
+A librarian may use a catalog to keep track of the books and printed materials.
+It may take a lot of time and energy finding a book in a hardcopy catalog of books that the library owns. The librarian has to cross check that catalog with the data kept after a book has been borrowed or returned.
+This activity can lead to boredom and strain on the body for sitting for too long.
+
+
+# Solution
+Single page web-application that does the crucial task of updating a library catalog.
+
+# API used for this project
+The API that i used for this project is (https://gutendex.com/)
+
+# Challenge faced
+Coming up with a pleasing and well done design.
+
+Solution: One should draw out the design before writing the html or the javascript.
+
+# Acknowledgement
+Moringa School
+It has a reallly good Software Engineering learning curriculum and they have th resources which help the students to read through the content.
+
+Caleb Kiprotich(Technical Mentor)
+The Technical mentoer approved of this project and gave me a go ahead for his project.
+He delightfully helped us, the students, through the content which has been used to go on with this project.
+
