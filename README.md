@@ -8,9 +8,13 @@ The objective for this system are to check in and check out books,update the num
 
 # A Guide on how to run the application
 -Install node js on your computer.
+
 Use this(https://nodejs.org/en) to get the instructions on how to install node.
+
 -Install json server on your computer.
+
 Use this(https://www.npmjs.com/package/json-server) to get instructions on how to install the json-server.
+
 -Use any code editor that you are similar with but i would recommend Visual Studio Code.
 
 # Running of the Project 
