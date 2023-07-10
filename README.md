@@ -9,11 +9,7 @@ The objective for this system are to check in and check out books,update the num
 # A Guide on how to run the application
 -Install node js on your computer.
 
-Use this(https://nodejs.org/en) to get the instructions on how to install node.
-
 -Install json server on your computer.
-
-Use this(https://www.npmjs.com/package/json-server) to get instructions on how to install the json-server.
 
 -Use any code editor that you are similar with but i would recommend Visual Studio Code.
 
@@ -57,7 +53,7 @@ This activity can lead to boredom and strain on the body for sitting for too lon
 Single page web-application that does the crucial task of updating a library catalog.
 
 # API used for this project
-The API that i used for this project is (https://gutendex.com/)
+The API that i used for this project is gutendex API.
 
 # Challenge faced
 Coming up with a pleasing and well done design.
@@ -70,5 +66,7 @@ It has a reallly good Software Engineering learning curriculum and they have th 
 
 Caleb Kiprotich(Technical Mentor)
 The Technical mentoer approved of this project and gave me a go ahead for his project.
-He delightfully helped us, the students, through the content which has been used to go on with this project.
+He delightfully helped us, the students, t# Phase-1-project-1-challenge-week-3
+This project is done by Claire Anita Chepkemoi as required for one to complete the first phase of Software Engineering course at Moringa School,Nairobi,Kenya.
+
 
